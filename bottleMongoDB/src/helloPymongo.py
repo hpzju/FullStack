@@ -10,6 +10,7 @@ col_grades = db_school.grades
 
 
 def update():
+    print("updating: ")
     return
 
 
