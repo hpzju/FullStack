@@ -17,4 +17,5 @@
 
 > * python helloBottle.py
 > * python helloFruit.py
+> * python helloPymongo.py
 
