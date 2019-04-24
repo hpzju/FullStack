@@ -9,6 +9,10 @@ db_school = client.school
 col_grades = db_school.grades
 
 
+def update():
+    return
+
+
 def find():
 
     print("find, reporting for duty")
