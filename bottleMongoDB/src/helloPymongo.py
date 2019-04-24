@@ -17,7 +17,7 @@ def find():
     selector = {'student_id': 1, '_id': 0, 'score': 1}
 
     try:
-        cursor = col_grades.find(query, selector).limit(10).skip(30)
+        cursor = col_grades.find(query, selector).skip(30).limit(10)
     except:
         print("Unexpected error:", sys.exc_info()[0])
 
