@@ -14,10 +14,10 @@ def find():
     print("find, reporting for duty")
 
     query = {'type': "exam"}
+    selector = {'student_id': 1, '_id': 0, 'score': 1}
 
     try:
-        cursor = col_grades.find(query).limit(10).skip(30)
-
+        cursor = col_grades.find(query, selector).limit(10).skip(30)
     except:
         print("Unexpected error:", sys.exc_info()[0])
 
