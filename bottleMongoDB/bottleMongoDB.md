@@ -16,5 +16,5 @@
 ### Run
 
 > * python helloBottle.py
-> * python helloPymongo.py
+> * python helloFruit.py
 

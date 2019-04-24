@@ -1,4 +1,3 @@
-import pymongo
 from bottle import route, run, template, post, request
 
 
