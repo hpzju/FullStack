@@ -1,6 +1,11 @@
 from bottle import route, run, template
 
 
+@route('/')
+def home_page():
+    return "Hello Bottle Web Framework!"
+
+
 @route('/hello/<name>')
 def index(name):
     return template('<b>Hello {{name}}</b>!', name=name)
