@@ -14,6 +14,18 @@ const assert = require("assert");
     console.log("******Connected successfully to server");
 
     const db = client.db(dbName);
+
+    // Get the collection
+    const col = db.collection("errmsgs");
+
+    // Get the cursor
+    const cursor = col.find({}).limit(1);
+
+    // Iterate over the cursor
+    while (await cursor.hasNext()) {
+      const doc = await cursor.next();
+      console.log(doc);
+    }
   } catch (err) {
     console.log(err.stack);
   }
