@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+   kb:
+     image: huberthao/kb:latest
+     ports:
+      - 9901:3000
+      - 35729:35729
+     restart: always
