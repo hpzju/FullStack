@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
+    <meta name="description" content="HTML5 Tutorial" />
+    <meta name="author" content="Hubert Hao" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./helloCSS.css" />
+
+    <title>HTML5 and CSS Tutorial</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="htmlElements-tab"
+            data-toggle="tab"
+            href="#htmlElements"
+            role="tab"
+            aria-controls="htmlElements"
+            aria-selected="true"
+            >HTML Elements</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="htmlAttributes-tab"
+            data-toggle="tab"
+            href="#htmlAttributes"
+            role="tab"
+            aria-controls="htmlAttributes"
+            aria-selected="false"
+            >HTML Attributes</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="layout-tab"
+            data-toggle="tab"
+            href="#layout"
+            role="tab"
+            aria-controls="layout"
+            aria-selected="false"
+            >Layout</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="style-tab"
+            data-toggle="tab"
+            href="#style"
+            role="tab"
+            aria-controls="style"
+            aria-selected="false"
+            >Style</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="semantic-tab"
+            data-toggle="tab"
+            href="#semantic"
+            role="tab"
+            aria-controls="semantic"
+            aria-selected="false"
+            >Semantic Outline</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="t-tab"
+            data-toggle="tab"
+            href="#t"
+            role="tab"
+            aria-controls="t"
+            aria-selected="false"
+            >t</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="container-fluid">
+      <div class="tab-content">
+        <!-- start of htmlElements -->
+        <div
+          class="tab-pane active"
+          id="htmlElements"
+          role="tabpanel"
+          aria-labelledby="htmlAttributes-tab"
+        >
+          <div class="container-fluid" id="headlines">
+            <h1>Headline1</h1>
+            <h2>Headline2</h2>
+            <h3>Headline3</h3>
+            <h4>Headline4</h4>
+            <h5>Headline5</h5>
+            <h6>Headline6</h6>
+          </div>
+          <hr />
+          <div class="container-fluid" id="blocks">
+            <h1>Block Elements</h1>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 bg-warning"><code>&lt;br /&gt;</code></div>
+              <div class="p-2 bg-success"><code>&lt;hr /&gt;</code></div>
+              <div class="p-2 bg-secondary">
+                <code>&lt;p&gt; &lt;/p&gt;</code>
+              </div>
+              <div class="p-2 bg-warning">
+                <code>&lt;pre&gt; &lt;/pre&gt;</code>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="container-fluid" id="inline">
+            <h1>Inline Elements</h1>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 bg-warning">
+                <code>&lt;span&gt; &lt;/span&gt;</code>
+              </div>
+              <div class="p-2 bg-success">
+                <code>&lt;b&gt; &lt;/b&gt;</code>
+              </div>
+              <div class="p-2 bg-secondary">
+                <code>&lt;strong&gt; &lt;/strong&gt;</code>
+              </div>
+              <div class="p-2 bg-warning">
+                <code>&lt;i&gt; &lt;/i&gt;</code>
+              </div>
+              <div class="p-2 bg-success">
+                <code>&lt;small&gt; &lt;/small&gt;</code>
+              </div>
+              <div class="p-2 bg-secondary">
+                <code>&lt;em&gt; &lt;/em&gt;</code>
+              </div>
+              <div class="p-2 bg-warning">
+                <code>&lt;mark&gt; &lt;/mark&gt;</code>
+              </div>
+              <div class="p-2 bg-success">
+                <code>&lt;del&gt; &lt;/del&gt;</code>
+              </div>
+              <div class="p-2 bg-secondary">
+                <code>&lt;ins&gt; &lt;/ins&gt;</code>
+              </div>
+              <div class="p-2 bg-warning">
+                <code>&lt;sub&gt; &lt;/sub&gt;</code>
+              </div>
+              <div class="p-2 bg-success">
+                <code>&lt;sup&gt; &lt;/sub&gt;</code>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid" id="media">
+            <h1>Media Elements</h1>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 bg-warning">
+                <code
+                  >&lt;img src="IMAGE_PATH_OR_URL" alt="SHOW_IMG_INFO" width="W"
+                  height="H"/&gt;
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- start of htmlAttributes -->
+        <div
+          class="tab-pane"
+          id="htmlAttributes"
+          role="tabpanel"
+          aria-labelledby="htmlAttributes-tab"
+        >
+          htmlAttributes
+        </div>
+        <!-- start of layout -->
+        <div
+          class="tab-pane"
+          id="layout"
+          role="tabpanel"
+          aria-labelledby="layout-tab"
+        >
+          Layout
+        </div>
+        <!-- start of style -->
+        <div
+          class="tab-pane"
+          id="style"
+          role="tabpanel"
+          aria-labelledby="style-tab"
+        >
+          <div class="container-fluid" id="inlineStyle">
+            <h1>Inline Style</h1>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 bg-warning">
+                <code
+                  >&lt;elem sytle="STYLE_ATTRIBUTE_VALUE_LIST"&gt;
+                  &lt;/elem&gt;</code
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- start of semantic -->
+        <div
+          class="tab-pane"
+          id="semantic"
+          role="tabpanel"
+          aria-labelledby="semantic-tab"
+        >
+          <div class="container-fluid" id="semantic">
+            <h1>Semantic Outline</h1>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 bg-warning">
+                <code>&lt;header&gt; &lt;/header&gt;</code>
+              </div>
+            </div>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 ml-5 bg-warning">
+                <code>&lt;nav&gt; &lt;/nav&gt;</code>
+              </div>
+            </div>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 bg-success">
+                <code>&lt;main&gt; &lt;/main&gt;</code>
+              </div>
+            </div>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 ml-5 bg-success">
+                <code>&lt;section&gt; &lt;/section&gt;</code>
+              </div>
+            </div>
+            <div class="d-flex flex-row bg-light mb-3 ml-5 ">
+              <div class="p-2 ml-5 bg-success">
+                <code>&lt;article&gt; &lt;/article&gt;</code>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-row bg-light mb-3 ml-5"
+              style="margin-left: 6rem!important"
+            >
+              <div class="p-2 ml-5 bg-success">
+                <code>&lt;h1&gt; &lt;/h1&gt;</code>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-row bg-light mb-3 ml-5"
+              style="margin-left: 9rem!important"
+            >
+              <div class="col-3">
+                <div class="p-2 ml-5 bg-warning">
+                  <code>&lt;aside&gt; &lt;/aside&gt;</code>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-2 ml-5 bg-success">
+                  <code>&lt;p&gt; &lt;/p&gt;</code>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="p-2 ml-5 bg-secondary">
+                  <code>&lt;aside&gt; &lt;/aside&gt;</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- start of t -->
+        <div class="tab-pane" id="t" role="tabpanel" aria-labelledby="t-tab">
+          t
+        </div>
+        <!-- end of tab content -->
+      </div>
+    </div>
+
+    <!-- <script>
+      $(function() {
+        $("#myTab li:last-child a").tab("show");
+      });
+    </script> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
