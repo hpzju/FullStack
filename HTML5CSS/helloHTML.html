@@ -217,6 +217,51 @@
               </div>
             </div>
           </div>
+          <div class="container-fluid" id="internalStyle">
+            <h1>Internal Style: in &lt;header&gt; &lt;/header&gt;</h1>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 bg-warning">
+                <pre><code>
+    &lt;style&gt;
+        body {
+            background-color: linen;
+        }
+        
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        } 
+    &lt;/style&gt;
+                  </code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid" id="externalStyle">
+            <h1>
+              External Style: link external .css files in &lt;header&gt;
+              &lt;/header&gt;
+            </h1>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 bg-warning">
+                <code
+                  >&lt;link rel="stylesheet" type="text/css" href="mystyle.css"
+                  /&gt;</code
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid" id="selectors">
+            <h1>
+              CSS Selectors
+            </h1>
+            <div class="d-flex flex-row bg-light mb-3">
+              <div class="p-2 bg-warning">
+                <a href="https://www.w3schools.com/cssref/css_selectors.asp"
+                  >CSS Selector Reference</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
         <!-- start of semantic -->
         <div
@@ -260,13 +305,12 @@
                 <code>&lt;h1&gt; &lt;/h1&gt;</code>
               </div>
             </div>
-
             <div
               class="d-flex flex-row bg-light mb-3 ml-5"
               style="margin-left: 9rem!important"
             >
-              <div class="col-3">
-                <div class="p-2 ml-5 bg-warning">
+              <div class="col-3 align-self-center">
+                <div class="p-2 ml-5 bg-success">
                   <code>&lt;aside&gt; &lt;/aside&gt;</code>
                 </div>
               </div>
@@ -274,12 +318,23 @@
                 <div class="p-2 ml-5 bg-success">
                   <code>&lt;p&gt; &lt;/p&gt;</code>
                 </div>
+                <div class="p-2 ml-5 bg-success">
+                  <code>&lt;p&gt; &lt;/p&gt;</code>
+                </div>
+                <div class="p-2 ml-5 bg-success">
+                  <code>&lt;p&gt; &lt;/p&gt;</code>
+                </div>
               </div>
-              <div class="col-3">
-                <div class="p-2 ml-5 bg-secondary">
+              <div class="col-3 align-self-center">
+                <div class="p-2 ml-5 bg-success">
                   <code>&lt;aside&gt; &lt;/aside&gt;</code>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row bg-light mb-3">
+            <div class="p-2 bg-secondary">
+              <code>&lt;footer&gt; &lt;/footer&gt;</code>
             </div>
           </div>
         </div>
