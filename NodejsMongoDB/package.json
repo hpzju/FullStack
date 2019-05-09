@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "consolidate": "^0.15.1",
+    "directory-tree": "^2.2.2",
     "express": "^4.16.4",
+    "jmespath": "^0.15.0",
     "mongodb": "^3.2.3",
     "swig": "^1.4.2",
     "uglify-js": "^3.5.8"
