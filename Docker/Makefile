@@ -8,6 +8,8 @@ JENKINS=192.168.1.101:9902
 MONGODB=192.168.1.101:27017
 MONGODB_BASE=/home/hubert/Codes/MongoDB
 
+GHOST=192.168.1.101:9904
+MONGODB_BASE=/home/hubert/Codes/GHOST
 
 
 help : 
@@ -15,6 +17,7 @@ help :
 	@echo "  make run/stop/start/restart/remove KB"
 	@echo "  make run/stop/start/restart/remove JENKINS"
 	@echo "  make run/stop/start/restart/remove MongoDB"
+	@echo "  make run/stop/start/restart/remove Ghost"
 
 
 runMongo :
@@ -46,7 +49,6 @@ removeMongo :
 	cd $(MONGODB_BASE) && sudo docker-compose down
 	@echo "done......."
 	@echo 
-
 
 
 runKB: 
@@ -118,5 +120,7 @@ removeJenkins :
 	@echo "done......"
 	@echo
 	@echo
+
+
 
 
