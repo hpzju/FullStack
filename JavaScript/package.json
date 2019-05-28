@@ -4,13 +4,17 @@
   "description": "",
   "main": "array.js",
   "scripts": {
-    "start": "node helloJS.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "directory-tree": "^2.2.3",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "webpack": "^4.32.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.2"
   }
 }
