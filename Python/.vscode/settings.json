@@ -1,5 +1,8 @@
 {
   "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe",
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true
+  "python.condaPath": "c:/ProgramData/Anaconda3/Scripts/conda",
+  "python.testing.pytestArgs": ["funtors"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true
 }
