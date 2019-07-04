@@ -1,5 +1,5 @@
 {
-  "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe",
+  "python.pythonPath": "C:\\Users\\hpzju\\.conda\\envs\\devopsPython\\python.exe",
   "python.condaPath": "c:\\ProgramData\\Anaconda3\\Scripts\\conda.exe",
   "python.testing.pytestArgs": [""],
   "python.testing.unittestEnabled": false,
