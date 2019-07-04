@@ -20,7 +20,7 @@ print(data)
 # url:   {url},
 # code: {response.status_code},
 # headers: {response.headers},
-# encoding: {response.encoding},
+# encoding: {response.encoding},~
 # cookies: {response.cookies},
 # elapsed: {response.elapsed}
 # history: {response.history},
