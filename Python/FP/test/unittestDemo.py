@@ -22,6 +22,5 @@ class Pet(object):
         self._name = value
 
     @classmethod
-    @property
     def counts(cls):
         return cls.__counter

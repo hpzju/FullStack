@@ -2,6 +2,7 @@ import sys
 import os
 
 if __name__ == "__main__":
+    print(sys.path)
     print(f"{sys.executable}")
     print(f"pwd: {os.getcwd()}")
     dirname, filename = os.path.split(os.path.abspath(__file__))
