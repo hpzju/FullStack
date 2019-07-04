@@ -18,5 +18,6 @@ class SXLJSpider(scrapy.Spider):
         print(pagedata.get())
         page = pagedata.css("div::attr(page-data)")
         d = page.get()
-        print(type(d), dict(d)
-        print(f"end: {'v'*60}")
+        print(type(d), dict(d))
+        print(f"start: {'*'*60}")
+        return True

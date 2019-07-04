@@ -20,3 +20,7 @@ class Pet(object):
     @name.setter
     def name(self, value):
         self._name = value
+
+    @classmethod
+    def counts(cls):
+        return cls.__counter
