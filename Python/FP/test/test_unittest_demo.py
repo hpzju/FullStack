@@ -1,8 +1,8 @@
 import unittest
-from unittestDemo import adder, adder10, Pet
+from unittest_demo import adder, adder10, Pet
 
 
-class unittestDemoTester(unittest.TestCase):
+class TestunittestDemo(unittest.TestCase):
     def test_adder(self):
         """testing adder()"""
         self.assertEqual(adder(1, 5), 6)

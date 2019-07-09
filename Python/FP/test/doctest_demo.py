@@ -2,18 +2,18 @@ import sys
 import doctest
 
 
-def doctestDemo(a, b):
+def doctest_demo(a, b):
     """
-    >>> doctestDemo(3, 2)
+    >>> doctest_demo(3, 2)
+    5
+
+    >>> doctest_demo(3, 4)
     7
 
-    >>> doctestDemo(3, 4)
-    7
-
-    >>> doctestDemo("str1", "str2")
+    >>> doctest_demo("str1", "str2")
     'str1str2'
 
-    >>> doctestDemo(3, "3")
+    >>> doctest_demo(3, "3")
     Traceback (most recent call last):
         ...
     TypeError: unsupported operand type(s) for +: 'int' and 'str'
@@ -24,11 +24,11 @@ def doctestDemo(a, b):
 if __name__ == "__main__":
     """
     import doctest module
-    run 'python test_doctestDemo.py -v'
+    run 'python doctest_demo.py -v'
     """
     print(80*"*")
     print(f"run test with: {sys.executable}")
-    print(doctestDemo(1, 8))
+    print(doctest_demo(1, 8))
     print(80*"*")
-    print("run docktest:")
+    print("run doctest_demo:")
     doctest.testmod()

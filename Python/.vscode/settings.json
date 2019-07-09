@@ -9,5 +9,10 @@
   "python.jediEnabled": false,
   // "python.analysis.disabled": ["unresolved-import", "undefined-variable"],
   "terminal.integrated.shellArgs.windows": ["-l"],
-  "python.autoComplete.extraPaths": ["./FP/functors", "./FP/test", "./web"]
+  "python.autoComplete.extraPaths": [
+    "c:/Codes/FullStack/Python/basic",
+    "c:/Codes/FullStack/Python/FP",
+    "c:/Codes/FullStack/Python/web"
+  ],
+  "python.envFile": "${workspaceFolder}/dev.env"
 }
