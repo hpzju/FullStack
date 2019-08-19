@@ -1,6 +1,5 @@
 import web
 from Models import RegisterModel, LoginModel, Posts
-import os
 
 urls = (
     '/', 'Home',

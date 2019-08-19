@@ -15,19 +15,18 @@
 # Status: {dev_status}
 ##################################################
 
+from datetime import datetime
 
-import sys
+
+def stamper(fmt='%Y-%m-%d %H:%M:%S'):
+    while True:
+        yield datetime.strftime(datetime.now(), fmt)
 
 
-if __name__ == '__main__':
-    print(f"int_info: {sys.int_info}")
-
-    a = 2**1000
-
-    print(f"2**1000 size: {sys.getsizeof(a)} Bytes")
-
-    print(f"0 size: {sys.getsizeof(0)} Bytes")
-    print(f"1 size: {sys.getsizeof(1)} Bytes")
-
-    string = 'abcdefghij'
-    print(f"'{string}' size: {sys.getsizeof(string)} Bytes")
+if __name__ == "__main__":
+    stampit = stamper('%H:%M:%S %f')
+    print(stampit)
+    for index, stamp in enumerate(stampit):
+        print(f"{stamp}: {index}")
+        if index > 100:
+            break

@@ -1,9 +1,13 @@
-from mypackage.mysubpackage2.moduleP2M1 import p2m1
-from mypackage.mysubpackage1.moduleP1M1 import p1m1
+import mypackage
 
-import sys
-print(sys.path)
+
+def info(pkage):
+    props = ['__name__', '__package__', '__path__', '__file__',
+             '__spec__', '__loader__', '__all__']
+    for prop in props:
+        print(f"{prop}: {getattr(pkage,f'{prop}')}")
+
 
 if __name__ == '__main__':
-    p1m1()
-    p2m1()
+    info(mypackage)
+    mypackage.p1m1()
