@@ -1,10 +1,12 @@
+# /usr/bin/evn python
+
 import pygame
 import math
 
 pygame.init()
 
 
-surface_size = 1024
+surface_size = 400
 main_surface = pygame.display.set_mode((surface_size, surface_size))
 my_clock = pygame.time.Clock()
 

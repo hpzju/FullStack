@@ -19,3 +19,5 @@ if __name__ == "__main__":
     home = Path.home()
     root = PurePath(home).anchor
     print(f"home: {home} \nroot: {root}")
+    print(sys.path)
+    print(os.getenv('PYTHONPATH'))
