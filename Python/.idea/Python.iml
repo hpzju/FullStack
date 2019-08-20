@@ -11,7 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/CodeWizard-master/CodeWizard-master" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.pytest_cache" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (pycharm)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

@@ -49,3 +49,5 @@ if __name__ == "__main__":
         log(f"in for-loop: {msg}")
         info = gen2.send(msg)
         log(f"info: {info}")
+
+    print("done")
