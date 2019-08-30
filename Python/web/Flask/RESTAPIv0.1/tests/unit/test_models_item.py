@@ -1,5 +1,6 @@
 import pytest
 from models.item import ItemModel
+from models.store import StoreModel
 
 name = 'string name'
 price = 1923.23
@@ -15,7 +16,3 @@ def test_itemmodel_init(item):
     assert name == item.name
     assert abs(price - item.price) < 0.000001
     assert store_id == 1
-
-
-def test_itemmodel_json(item):
-    assert item.json() == {'name': name, 'price': price}

@@ -13,7 +13,7 @@ class Item(Resource):
                         type=int,
                         required=True,
                         help="Item needs store id")
-    @jwt_required()
+
     def get(self, name):
         item = ItemModel.find_by_name(name)
         if item:
