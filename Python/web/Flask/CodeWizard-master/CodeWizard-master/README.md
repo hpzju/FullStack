@@ -1,2 +1,0 @@
-# CodeWizard
-social web application
